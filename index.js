@@ -103,6 +103,7 @@ buttons.click(function(event){
         console.log('You are Out');
         audio = new Audio('sounds/wrong.mp3');
         audio.play()
+        _paq.push(['trackGoal', 1, level]);
         $('h1').text(`Game Over, press any key to Restart. Level ${level}`);
 
     }
